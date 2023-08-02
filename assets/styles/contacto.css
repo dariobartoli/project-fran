@@ -1,0 +1,100 @@
+.contacto__container{
+    background-image: url("../img/contact.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 2rem;
+    justify-content: space-between;
+}
+
+.contact__title{
+    font-size: 2rem;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.418);
+}
+
+.contact__contain{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: end;
+    width: 90%;
+    max-width: 700px;
+    font-size: 1.2rem;
+}
+
+.contact__text__contain{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.486);
+    font-weight: bold;
+    gap: 0.5rem;
+}
+
+.contact__ancor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9rem;
+    transition: 0.3s;
+}
+
+.contact__ancor:hover{
+    color: #F7975D;
+    transition: 0.3s;
+}
+.contact__ancor:hover > .contact__icon{
+    scale: 1.1;
+}
+
+.contact__icon{
+    width: 30px;
+}
+
+.map{
+    border: 0;
+    border-radius: 0.5rem;
+}
+
+
+@media screen and (min-width: 450px){
+    .contact__text__contain{
+        font-size: 1.45rem;
+    }
+    .map{
+        width: 400px;
+        height: 300px;
+    }
+}
+
+
+@media screen and (min-width: 769px){
+    .contact__title{
+        font-size: 3rem;
+    }
+    .contact__text__contain{
+        font-size: 1.55rem;
+    }
+    .contact__icon{
+        width: 50px;
+    }
+}
+
+@media screen and (min-width: 1401px){
+    .contact__title{
+        font-size: 7rem;
+    }
+    .contact__text__contain{
+        font-size: 1.75rem;
+    }
+    .contact__icon{
+        width: 60px;
+    }
+}

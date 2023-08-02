@@ -1,0 +1,25 @@
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-image: linear-gradient(to bottom, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #202020, #202020, #202020, #1a1a1a, #141414, #0b0b0b, #000000);
+    z-index: 1;
+    border-bottom: 2px rgb(255, 255, 255) solid;
+}
+
+.logo{
+    width: 50px;
+}
+
+.title{
+    font-size: 2rem;
+    color: white;
+}
+
+
+@media screen and (min-width: 769px){
+    .header__container{
+        display: none;
+    }
+}
