@@ -74,10 +74,19 @@
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button__home > a{
+    padding: 1.6rem;
 }
 .button__home:hover{
     scale: 1.1;
     transition: 0.5s;
+}
+.button__tel{
+    display: none;
 }
 
 .title__container{
@@ -287,7 +296,13 @@
         top: 100px;
         gap: 0.5rem;
     }
-    
+    .button__desktop{
+        display: none;
+    }
+    .button__tel{
+        margin-top: 2rem;
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 550px){

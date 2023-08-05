@@ -2,9 +2,10 @@
     background-image: url("../img/contact.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: -140px ;
     width: 100%;
-    height: 100vh;
-    padding-top: 6rem;
+    min-height: 100vh;
+    padding-top: 5rem;
     padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
@@ -32,7 +33,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    flex-wrap: wrap;
     text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.486);
     font-weight: bold;
     gap: 0.5rem;
@@ -75,7 +75,7 @@
 }
 
 
-@media screen and (min-width: 769px){
+@media screen and (min-width: 768px){
     .contact__title{
         font-size: 3rem;
     }
@@ -84,6 +84,10 @@
     }
     .contact__icon{
         width: 50px;
+    }
+    .contacto__container{
+        padding-top: 7rem;
+        background-position: initial;
     }
 }
 

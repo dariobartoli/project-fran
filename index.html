@@ -13,17 +13,23 @@
     <link rel="stylesheet" href="./assets/styles/contacto.css" />
     <link rel="stylesheet" href="./assets/styles/home.css" />
     <link rel="stylesheet" href="./assets/styles/services.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <div class="home__container" id="home">
       <div class="head__container">
-        <div class="logo__contain">
+        <div class="logo__contain animate__animated animate__fadeInLeft">
           <div class="shadows"></div>
           <img src="./assets/img/logo.svg" alt="logo" class="logaso" />
           <p class="textlogo">Laser Argento</p>
         </div>
       </div>
-      <div class="menu" id="navbar">
+      <div class="menu animate__animated animate__fadeInRight" id="navbar">
         <a href="#home" class="ancor"> Inicio </a>
         <a href="#contact" class="ancor"> Contacto </a>
         <a href="#about" class="ancor"> ¿Quienes Somos? </a>
@@ -33,11 +39,13 @@
           <div class="title__container">
             <p class="text" id="texto-escritura"></p>
           </div>
-          <button class="button__home">
-            <a href="#services">Saber más</a>
-          </button>
+          <a
+            href="#about"
+            class="button__home button__desktop animate__animated animate__zoomIn"
+            >Saber más</a
+          >
         </div>
-        <div class="video__container">
+        <div class="video__container animate__animated animate__zoomIn">
           <video
             src="./assets/video/video-main.mp4"
             autoplay
@@ -46,13 +54,18 @@
             class="video"
           ></video>
         </div>
+        <a
+          href="#about"
+          class="button__home button__tel animate__animated animate__zoomIn"
+          >Saber más</a
+        >
       </div>
     </div>
 
     <div class="about__container" id="about">
-      <div class="about__box1">
-        <h2 class="tittle__about">¿QUIENES SOMOS?</h2>
-        <p class="text__about">
+      <div class="about__box1" >
+        <h2 class="tittle__about" data-aos="fade-right" data-aos-duration="1000">¿QUIENES SOMOS?</h2>
+        <p class="text__about" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
           Somos una empresa conformada por ingenieros capacitados, dedicados a
           la reparación y mantenimiento de equipos de depilación láser y otro
           tipo de equipos como Hifu, Criolipólisis, etc. En Láser Argento, nos
@@ -67,8 +80,8 @@
           cada interacción.
         </p>
       </div>
-      <div class="about__box2">
-        <div class="a">
+      <div class="about__box2" >
+        <div class="a" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
           <p class="text__about">
             Láser Argento entiende la importancia de mantener sus equipos de
             depilación en condiciones óptimas de funcionamiento. Nuestro equipo
@@ -81,16 +94,25 @@
             confiable en el mantenimiento de equipos de depilación láser!
           </p>
         </div>
-        <div class="about__image"></div>
-        <img src="" alt="" />
+        <iframe
+          src="https://www.youtube.com/embed/iwdtidtt_PQ"
+          title="Procesos de fabricación de diodos láser"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          class="videoYT"
+          data-aos="zoom-in"
+          data-aos-duration="800"
+          data-aos-delay="500"
+        ></iframe>
       </div>
     </div>
 
     <div class="services__container" id="services">
       <div>
-        <h3 class="services__title">¿COMO PODEMOS AYUDARTE?</h3>
+        <h3 class="services__title" data-aos="zoom-in-down" data-aos-duration="1000">¿COMO PODEMOS AYUDARTE?</h3>
       </div>
-      <div class="services__send">
+      <div class="services__send" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
         <div class="contain__icon">
           <img
             src="./assets/img/envio-al-mundo-entero.png"
@@ -101,66 +123,59 @@
         <p class="services__text">Envios a Todo el País</p>
       </div>
       <div class="services__icons__contain">
-        <div>
-          <div class="circle">
-            <img
-              src="./assets/img/prueba.png"
-              alt="imagen"
-              class="services__image"
-            />
-            <div class="circle2"></div>
-            <div class="services__ancor">
-              <a href="">Necesito reparar un equipo</a>
-            </div>
-          </div>
+        <div class="circle" data-aos="flip-up" data-aos-duration="500" data-aos-delay="300" data-aos-easing="linear">
+          <img
+            src="./assets/img/card1.png"
+            alt="imagen"
+            class="services__image"
+          />
+          <div class="circle2"></div>
+          <a
+            href="https://wa.me/543513274104/?text=Buenos días, he tenido un problema con mi equipo de depilación, ¿podrían ayudarme?, desde ya muchas gracias. Mi nombre es "
+            target="_blank"
+            class="services__ancor"
+            >Necesito reparar un equipo</a
+          >
         </div>
-        <div>
-          <div class="circle">
+
+        <div class="services__icons__rest">
+          <div class="circle" data-aos="flip-up" data-aos-duration="500" data-aos-delay="550" data-aos-easing="linear">
             <img
-              src="./assets/img/prueba.png"
+              src="./assets/img/card2.png"
               alt="imagen"
               class="services__image"
             />
             <div class="circle2"></div>
-            <div class="services__ancor">
-              <a href="">Necesito un respuesto</a>
-            </div>
+            <a
+              href="https://wa.me/543513274104/?text=Buenos días, necesito comprar y que me envíen un repuesto, desde ya muchas gracias. Mi nombre es "
+              target="_blank"
+              class="services__ancor"
+              >Necesito un respuesto</a
+            >
           </div>
-        </div>
-        <div>
-          <div class="circle">
+
+          <div class="circle" data-aos="flip-up" data-aos-duration="500" data-aos-delay="750" data-aos-easing="linear">
             <img
-              src="./assets/img/prueba.png"
+              src="./assets/img/card3.png"
               alt="imagen"
               class="services__image"
             />
             <div class="circle2"></div>
-            <div class="services__ancor">
-              <a href="">Necesito un equipo</a>
-            </div>
+            <a
+              href="https://wa.me/543513274104/?text=Buenos días, estoy interesado en adquirir un equipo de depilación láser, ¿podrían asesorarme en cuanto a las diferentes opciones?, mi nombre es "
+              target="_blank"
+              class="services__ancor"
+              >Necesito un equipo</a
+            >
           </div>
         </div>
       </div>
     </div>
 
     <div class="contacto__container" id="contact">
-      <h4 class="contact__title">CONTACTO</h4>
-      <div class="map__container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1012.7432269949932!2d-64.23129439672374!3d-31.374191993295042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432992f513556b9%3A0xfe17b0ea399ca0eb!2sGdor.%20Roque%20Ferreyra%20%26%20Luis%20Jose%20de%20Tejeda%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1690231644457!5m2!1ses-419!2sar"
-          width="200"
-          height="200"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          class="map"
-        ></iframe>
-      </div>
-
-      <div class="contact__contain">
+      <h4 class="contact__title" data-aos="zoom-in" data-aos-duration="1000">CONTACTO</h4>
+      <div class="contact__contain" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
         <div class="contact__text__contain">
-          <p>Whatsapp:</p>
           <a
             href="https://wa.me/543513274104/?text=Hola buenos días, estoy interesado/a en"
             target="_blank"
@@ -174,8 +189,7 @@
             />
           </a>
         </div>
-        <div class="contact__text__contain">
-          <p>Instagram:</p>
+        <div class="contact__text__contain" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="350">
           <a
             href="http://www.instagram.com/laserargento/"
             target="_blank"
@@ -189,17 +203,39 @@
             />
           </a>
         </div>
-        <div class="contact__text__contain">
+        <div class="contact__text__contain" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="500">
           <p>
             Ubicación: Córdoba, Barrio Cerro de Las Rosas Calle Roque Ferreyra y
             Jose Luis de Tejeda
           </p>
-          <img src="./assets/img/iconubi.png" alt="icon" class="contact__icon" />
+          <img
+            src="./assets/img/iconubi.png"
+            alt="icon"
+            class="contact__icon"
+          />
         </div>
+      </div>
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1012.7432269949932!2d-64.23129439672374!3d-31.374191993295042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432992f513556b9%3A0xfe17b0ea399ca0eb!2sGdor.%20Roque%20Ferreyra%20%26%20Luis%20Jose%20de%20Tejeda%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1690231644457!5m2!1ses-419!2sar"
+          width="200"
+          height="200"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+          data-aos="zoom-in"
+          data-aos-duration="800" 
+          data-aos-delay="750"
+        ></iframe>
       </div>
     </div>
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./index.js"></script>
   </body>
 </html>
