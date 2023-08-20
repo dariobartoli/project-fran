@@ -12,6 +12,7 @@
     align-items: flex-end;
     padding-right: 2rem;
     justify-content: space-between;
+    position: relative;
 }
 
 .contact__title{
@@ -27,6 +28,7 @@
     width: 90%;
     max-width: 700px;
     font-size: 1.2rem;
+    z-index: 1;
 }
 
 .contact__text__contain{
@@ -58,9 +60,52 @@
     width: 30px;
 }
 
+.map__container{
+    z-index: 1;
+}
 .map{
     border: 0;
     border-radius: 0.5rem;
+}
+
+.contacto__logo{
+    position: absolute;
+    width: 300px;
+    top: 210px;
+    left: -10px;
+    animation: rotate 72s infinite linear;
+}
+
+@keyframes rotate{
+    0% { transform: rotate(0deg);}
+    4.16% { transform: rotate(-15deg);}
+    8.32% { transform: rotate(-30deg);}
+    12.48% { transform: rotate(-45deg);}
+    16.64% { transform: rotate(-60deg);}
+    20.8% { transform: rotate(-75deg);}
+    25% { transform: rotate(-90deg);}
+    29.12% { transform: rotate(-105deg);}
+    33.28% { transform: rotate(-120deg);}
+    37.44% { transform: rotate(-135deg);}
+    41.6% { transform: rotate(-150deg);}
+    45.76% { transform: rotate(-165deg);}
+    50% { transform: rotate(-180deg);}
+    54.16% { transform: rotate(-195deg);}
+    58.32% { transform: rotate(-210deg);}
+    62.48% { transform: rotate(-225deg);}
+    66.64% { transform: rotate(-240deg);}
+    70.8% { transform: rotate(-255deg);}
+    75% { transform: rotate(-270deg);}
+    79.12% { transform: rotate(-285deg);}
+    83.28% { transform: rotate(-300deg);}
+    87.44% { transform: rotate(-315deg);}
+    91.6% { transform: rotate(-330deg);}
+    95.76% { transform: rotate(-345deg);}
+    100% { transform: rotate(-360deg);}
+}
+
+.contacto__logo__desktop{
+    display: none;
 }
 
 
@@ -71,6 +116,9 @@
     .map{
         width: 400px;
         height: 300px;
+    }
+    .contacto__logo{
+        left: -30px;
     }
 }
 
@@ -89,6 +137,20 @@
         padding-top: 7rem;
         background-position: initial;
     }
+    .contacto__logo{
+        width: 400px;
+        top: 400px;
+        left: 210px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .contacto__logo__desktop{
+        display: block;
+    }
+    .contacto__logo__cel{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1401px){
@@ -100,5 +162,18 @@
     }
     .contact__icon{
         width: 60px;
+    }
+}
+
+@media screen and (min-width: 1700px){
+    .contacto__logo{
+        width: 460px;
+    }
+}
+@media screen and (min-width: 1800px){
+    .contacto__logo{
+        width: 500px;
+        top: 330px;
+        left: 140px;
     }
 }

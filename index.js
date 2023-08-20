@@ -61,3 +61,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+
+
+function playVideo() {
+  var videoContainer = document.getElementById('videoContainer');
+  videoContainer.innerHTML = '<iframe src="https://www.youtube.com/embed/iwdtidtt_PQ?autoplay=1" frameborder="0" allowfullscreen></iframe>';
+}
